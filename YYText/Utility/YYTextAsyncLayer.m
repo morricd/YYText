@@ -233,6 +233,7 @@ static dispatch_queue_t YYTextAsyncLayerGetReleaseQueue() {
             return value != sentinel.value;
         };
         
+        //修改IOS 17 系统的闪退
         UIGraphicsImageRenderer *renderer = [[UIGraphicsImageRenderer alloc] initWithSize:self.bounds.size];
                     UIImage *image = [renderer imageWithActions:^(UIGraphicsImageRendererContext * _Nonnull context) {
                         if (self.opaque && context) {
